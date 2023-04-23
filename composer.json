@@ -1,0 +1,28 @@
+{
+	"name": "behzadsh/rabbitmq-broadcaster",
+	"description": "A laravel event broadcaster which broadcasts event into a fanout or topic RabbitMQ exchange.",
+	"type": "library",
+	"keywords": ["laravel", "rabbitmq", "broadcast", "events", "fanout", "message-broker"],
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Behzad Shabani",
+			"email": "behzad.shabani@gmail.com"
+		}
+	],
+	"minimum-stability": "stable",
+	"autoload": {
+		"psr-4": {
+			"Behzadsh\\RabbitMQBroadcaster\\": "src/"
+		}
+	},
+	"require": {
+		"php": "^8.2",
+		"ext-json": "*",
+		"php-amqplib/php-amqplib": "~3.5",
+		"illuminate/support": "^9.0|^10.0",
+		"illuminate/contracts": "^9.0|^10.0",
+		"illuminate/broadcasting": "^9.0|^10.0",
+		"illuminate/http": "^9.0|^10.0"
+	}
+}
